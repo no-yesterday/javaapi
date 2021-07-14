@@ -29,12 +29,11 @@ public class Test01 {
     private static void test9(String str) {
         //9
         System.out.println("第九题");
-        String str2 = "HelloWorld";
         //转全大写
-        String s = str2.toUpperCase();
+        String s = str.toUpperCase();
         System.out.println("s = " + s);
         //转全小写
-        String s1 = str2.toLowerCase();
+        String s1 = str.toLowerCase();
         System.out.println("s1 = " + s1);
     }
 
