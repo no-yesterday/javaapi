@@ -21,6 +21,10 @@ public class Test02 {
         collection.add("3");
         collection.add("$");
         collection.add("4");
+//        for (int i = 1; i < 5; i++) {
+//            collection.add(i);
+//            collection.add("$");
+//        }
         System.out.println("collection = " + collection);
         Iterator<String> iterator = collection.iterator();
         while (iterator.hasNext()){
