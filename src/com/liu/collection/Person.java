@@ -1,0 +1,53 @@
+package com.liu.collection;
+
+public class Person implements Comparable<Person>{
+    private String name;
+    private int height;
+    private int age;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", height=" + height +
+                ", age=" + age +
+                '}';
+    }
+
+    //实现的接口是，比较接口
+    @Override
+    public int compareTo(Person o) {
+        //目前，按照身高排序
+        //如果return的返回值大于0，就是自身大于被比较对象
+//        int height = this.getHeight()-o.getHeight();
+//        return height;
+        //按年龄从小到大排序
+        int age = o.getAge()-this.getAge();
+        return age;
+        //从大到小排序是this.getAge()-o.getAge();
+    }
+}
